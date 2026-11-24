@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis favoritos | Punto Gamer</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+
+            <a href="../index.html" class="logo">
+                PUNTO <span>GAMER</span>
+            </a>
+
+            <nav class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="favoritos.html">
+                    Favoritos <span id="contador-favoritos">0</span>
+                </a>
+
+                <a href="carrito.html">
+                    Carrito <span id="contador-carrito">0</span>
+                </a>
+
+                <a href="login.html">Mi cuenta</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="favorites">
+
+        <section class="page-heading">
+            <div class="container">
+                <span class="section-tag">TU COLECCIÓN</span>
+                <h1>Mis favoritos</h1>
+                <p>Guardá los videojuegos que querés tener presentes.</p>
+            </div>
+        </section>
+
+        <section class="favorites-section">
+            <div class="container">
+
+                <div class="favorites product-list">
+                    <!-- favoritos.js agrega los productos acá -->
+                </div>
+
+                <div class="favorites-footer">
+                    <a href="catalogo.html" class="btn">
+                        Explorar catálogo
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">
+                    PUNTO <span>GAMER</span>
+                </a>
+                <p>LEVEL UP YOUR GAME.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Punto Gamer. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/storage.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/favoritos.js"></script>
+
+</body>
+</html>

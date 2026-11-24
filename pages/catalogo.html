@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorá el catálogo de videojuegos de Punto Gamer.">
+    <title>Catálogo | Punto Gamer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+
+            <a href="../index.html" class="logo">
+                PUNTO <span>GAMER</span>
+            </a>
+
+            <nav class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="catalogo.html" class="active">Catálogo</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="favoritos.html">
+                    Favoritos <span id="contador-favoritos">0</span>
+                </a>
+
+                <a href="carrito.html">
+                    Carrito <span id="contador-carrito">0</span>
+                </a>
+
+                <a href="login.html">Mi cuenta</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="catalog-hero">
+            <div class="container">
+                <span class="section-tag">PUNTO GAMER</span>
+                <h1>Nuestro catálogo</h1>
+                <p>Encontrá el videojuego ideal para tu próxima partida.</p>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container">
+
+                <div class="catalog-heading">
+                    <div>
+                        <h2>Todos los videojuegos</h2>
+                        <p>Explorá nuestra colección.</p>
+                    </div>
+                </div>
+
+                <!-- BUSCADOR Y FILTROS -->
+                <div class="catalog-filters">
+
+                    <div class="filter-search">
+                        <label for="search">Buscar videojuego</label>
+
+                        <input
+                            type="search"
+                            id="search"
+                            placeholder="Ejemplo: GTA, FIFA, Minecraft..."
+                        >
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="genre">Género</label>
+
+                        <select id="genre">
+                            <option value="">Todos los géneros</option>
+                            <option value="Accion">Acción</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="Deportes">Deportes</option>
+                            <option value="RPG">RPG</option>
+                            <option value="Carreras">Carreras</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="platform">Plataforma</label>
+
+                        <select id="platform">
+                            <option value="">Todas las plataformas</option>
+                            <option value="PC">PC</option>
+                            <option value="PlayStation">PlayStation</option>
+                            <option value="Xbox">Xbox</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- RESULTADOS -->
+                <div class="catalog-results">
+                    <p id="cantidad-resultados">
+                        0 videojuegos encontrados
+                    </p>
+
+                    <button type="button" id="limpiar-filtros">
+                        Limpiar filtros
+                    </button>
+                </div>
+
+                <!-- LISTA DE PRODUCTOS -->
+                <div class="product-list" id="lista-productos"></div>
+
+            </div>
+        </section>
+
+        <section class="catalog-banner">
+            <div class="container">
+                <h2>Tu próxima aventura te espera</h2>
+                <p>Explorá, elegí y preparate para jugar.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">
+                    PUNTO <span>GAMER</span>
+                </a>
+                <p>LEVEL UP YOUR GAME.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explorar</h3>
+                <a href="../index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Mi cuenta</h3>
+                <a href="login.html">Ingresar</a>
+                <a href="favoritos.html">Favoritos</a>
+                <a href="carrito.html">Carrito</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Punto Gamer. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/storage.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/favoritos.js"></script>
+    <script src="../js/catalogo.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi cuenta | Punto Gamer</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+
+            <a href="../index.html" class="logo">
+                PUNTO <span>GAMER</span>
+            </a>
+
+            <nav class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="favoritos.html">Favoritos</a>
+                <a href="carrito.html">Carrito</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="account">
+
+        <section class="page-heading">
+            <div class="container">
+                <span class="section-tag">PUNTO GAMER</span>
+                <h1>Mi cuenta</h1>
+                <p>Ingresá o creá tu cuenta.</p>
+            </div>
+        </section>
+
+        <section class="account-section">
+            <div class="container">
+
+                <div class="account-grid">
+
+                    <!-- INICIAR SESIÓN -->
+                    <div class="account-card">
+
+                        <h2>Iniciar sesión</h2>
+                        <p>Ingresá con tus datos.</p>
+
+                        <form id="login-form">
+
+                            <div class="form-group">
+                                <label for="login-email">
+                                    Correo electrónico
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="login-email"
+                                    placeholder="correo@ejemplo.com"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="login-password">
+                                    Contraseña
+                                </label>
+
+                                <input
+                                    type="password"
+                                    id="login-password"
+                                    placeholder="Tu contraseña"
+                                    minlength="6"
+                                    required
+                                >
+                            </div>
+
+                            <button type="submit" class="btn">
+                                Ingresar
+                            </button>
+
+                            <p
+                                id="login-message"
+                                class="form-message"
+                                aria-live="polite"
+                            ></p>
+
+                        </form>
+
+                    </div>
+
+                    <!-- REGISTRARSE -->
+                    <div class="account-card">
+
+                        <h2>Crear una cuenta</h2>
+                        <p>Registrate para comenzar.</p>
+
+                        <form id="register-form">
+
+                            <div class="form-group">
+                                <label for="register-name">
+                                    Nombre
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="register-name"
+                                    placeholder="Tu nombre"
+                                    minlength="2"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="register-email">
+                                    Correo electrónico
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="register-email"
+                                    placeholder="correo@ejemplo.com"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="register-password">
+                                    Contraseña
+                                </label>
+
+                                <input
+                                    type="password"
+                                    id="register-password"
+                                    placeholder="Creá una contraseña"
+                                    minlength="6"
+                                    required
+                                >
+                            </div>
+
+                            <button type="submit" class="btn">
+                                Registrarme
+                            </button>
+
+                            <p
+                                id="register-message"
+                                class="form-message"
+                                aria-live="polite"
+                            ></p>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">
+                    PUNTO <span>GAMER</span>
+                </a>
+
+                <p>LEVEL UP YOUR GAME.</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Punto Gamer. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/storage.js"></script>
+    <script src="../js/auth.js"></script>
+
+</body>
+</html>

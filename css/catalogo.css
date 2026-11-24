@@ -1,0 +1,105 @@
+
+/* =================================
+   PUNTO GAMER - CATALOGO
+================================= */
+
+/* ENCABEZADO DE PAGINAS */
+.page-heading {
+    text-align: center;
+    padding: 45px 20px;
+    margin-bottom: 35px;
+
+    background:
+        radial-gradient(circle, rgba(139, 92, 246, 0.16), transparent 65%);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.page-heading h1 {
+    margin-bottom: 12px;
+    color: var(--white);
+}
+
+.page-heading p {
+    font-size: 1rem;
+}
+
+/* HERRAMIENTAS DEL CATALOGO */
+.catalog-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+/* BUSCADOR */
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 10px;
+}
+
+.search-form label {
+    width: 100%;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.search-form input {
+    min-width: 250px;
+}
+
+/* FILTROS */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.filters label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.filters select {
+    min-width: 150px;
+    cursor: pointer;
+}
+
+/* CONTENIDO DEL CATALOGO */
+.catalog {
+    margin-bottom: 60px;
+}
+
+.catalog h2 {
+    margin-bottom: 25px;
+    border-left: 4px solid var(--purple-light);
+    padding-left: 15px;
+}
+
+/* TARJETAS DEL CATALOGO */
+.catalog .product-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.catalog .product-card img {
+    height: 260px;
+}
+
+.catalog .product-card {
+    min-width: 0;
+}
+
+/* BOTON DE BUSQUEDA */
+.search-form button {
+    min-height: 44px;
+}
