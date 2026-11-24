@@ -1,15 +1,20 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Punto Gamer: encontrá videojuegos para PlayStation 4 y PlayStation 5.">
+    <meta name="description" content="Punto Gamer: descubrí videojuegos de diferentes géneros y plataformas. Encontrá tu próxima aventura.">
+
+    <meta name="theme-color" content="#0B0B12">
+
     <title>Punto Gamer | Tu tienda de videojuegos</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
@@ -32,6 +37,7 @@
             </nav>
 
             <div class="header-actions">
+
                 <a href="pages/favoritos.html">
                     Favoritos
                     <span id="contador-favoritos">0</span>
@@ -42,7 +48,10 @@
                     <span id="contador-carrito">0</span>
                 </a>
 
-                <a href="pages/login.html">Mi cuenta</a>
+                <a href="pages/login.html" class="account-link">
+                    Mi cuenta
+                </a>
+
             </div>
 
         </div>
@@ -50,12 +59,15 @@
 
     <main>
 
-        <!-- BANNER PRINCIPAL -->
+        <!-- PORTADA PRINCIPAL -->
         <section class="hero">
-            <div class="container hero-content">
+            <div class="container hero-container">
 
-                <div class="hero-text">
-                    <span class="hero-tag">TU PRÓXIMO NIVEL COMIENZA ACÁ</span>
+                <div class="hero-content">
+
+                    <span class="hero-tag">
+                        TU PRÓXIMO NIVEL COMIENZA ACÁ
+                    </span>
 
                     <h1>
                         LEVEL UP
@@ -65,24 +77,41 @@
                     <p>
                         Descubrí nuevos mundos, superá desafíos
                         y encontrá los videojuegos que estabas buscando.
+                        Tu próxima aventura comienza en Punto Gamer.
                     </p>
 
                     <div class="hero-buttons">
+
                         <a href="pages/catalogo.html" class="btn">
                             Explorar catálogo
+                            <span>→</span>
                         </a>
 
                         <a href="#categorias" class="btn btn-secondary">
                             Ver categorías
                         </a>
+
                     </div>
+
+                    <div class="hero-note">
+                        <span class="hero-note-line"></span>
+                        <span>ENCONTRÁ TU PRÓXIMO JUEGO</span>
+                    </div>
+
                 </div>
 
                 <div class="hero-image">
                     <img
                         src="assets/img/banners/banner-principal.jpg"
-                        alt="Promoción de Punto Gamer"
+                        alt="Universo gaming de Punto Gamer"
                     >
+
+                    <div class="hero-image-overlay"></div>
+
+                    <div class="hero-image-label">
+                        <span>PG</span>
+                        <p>LEVEL UP YOUR GAME</p>
+                    </div>
                 </div>
 
             </div>
@@ -93,9 +122,18 @@
             <div class="container">
 
                 <div class="section-heading">
-                    <span class="section-tag">EXPLORÁ</span>
+
+                    <span class="section-tag">
+                        EXPLORÁ
+                    </span>
+
                     <h2>Buscá tu próxima aventura</h2>
-                    <p>Encontrá juegos según tus preferencias.</p>
+
+                    <p>
+                        Explorá diferentes géneros y encontrá
+                        el estilo de juego que más te guste.
+                    </p>
+
                 </div>
 
                 <div class="category-grid">
@@ -104,51 +142,69 @@
                         <div class="category-icon">⚔️</div>
                         <h3>Acción</h3>
                         <p>Combates y desafíos.</p>
+                        <span class="category-link">Explorar categoría →</span>
                     </a>
 
                     <a href="pages/catalogo.html" class="category-card">
                         <div class="category-icon">🗺️</div>
                         <h3>Aventura</h3>
                         <p>Explorá nuevos mundos.</p>
+                        <span class="category-link">Explorar categoría →</span>
                     </a>
 
                     <a href="pages/catalogo.html" class="category-card">
                         <div class="category-icon">🏆</div>
                         <h3>Deportes</h3>
-                        <p>Competí y ganá.</p>
+                        <p>Competí y superá tus límites.</p>
+                        <span class="category-link">Explorar categoría →</span>
                     </a>
 
                     <a href="pages/catalogo.html" class="category-card">
                         <div class="category-icon">🐉</div>
                         <h3>RPG</h3>
                         <p>Viví grandes historias.</p>
+                        <span class="category-link">Explorar categoría →</span>
                     </a>
 
                     <a href="pages/catalogo.html" class="category-card">
                         <div class="category-icon">🏎️</div>
                         <h3>Carreras</h3>
                         <p>Velocidad al máximo.</p>
+                        <span class="category-link">Explorar categoría →</span>
                     </a>
 
                 </div>
+
             </div>
         </section>
 
-        <!-- VIDEOJUEGOS -->
+        <!-- VIDEOJUEGOS DESTACADOS -->
         <section class="featured">
             <div class="container">
 
                 <div class="section-heading">
-                    <span class="section-tag">NUESTRA SELECCIÓN</span>
+
+                    <span class="section-tag">
+                        NUESTRA SELECCIÓN
+                    </span>
+
                     <h2>Videojuegos disponibles</h2>
-                    <p>Descubrí algunos de los títulos de nuestro catálogo.</p>
+
+                    <p>
+                        Descubrí algunos de los títulos
+                        que forman parte de nuestro catálogo.
+                    </p>
+
                 </div>
 
-                <div class="product-list" id="lista-productos"></div>
+                <div
+                    class="product-list"
+                    id="lista-productos"
+                ></div>
 
                 <div class="section-footer">
                     <a href="pages/catalogo.html" class="btn">
-                        Ver todo el catálogo
+                        Ver todo el catálogo →
                     </a>
                 </div>
 
@@ -160,78 +216,124 @@
             <div class="container">
 
                 <div class="offer-content">
-                    <div>
-                        <span class="section-tag">OFERTAS ESPECIALES</span>
-                        <h2>Encontrá tu próximo juego</h2>
+
+                    <div class="offer-text">
+
+                        <span class="section-tag">
+                            DESCUBRÍ MÁS
+                        </span>
+
+                        <h2>
+                            Tu próxima aventura
+                            está esperando.
+                        </h2>
+
                         <p>
-                            Explorá nuestro catálogo y descubrí
-                            todas las opciones disponibles.
+                            Explorá nuestro catálogo, conocé nuevos
+                            títulos y encontrá el videojuego ideal
+                            para tu próxima partida.
                         </p>
 
                         <a href="pages/catalogo.html" class="btn">
-                            Ver promociones
+                            Descubrir videojuegos →
                         </a>
+
                     </div>
 
                     <div class="offer-decoration">
                         <span>PG</span>
+                        <small>PLAYER ONE</small>
                     </div>
+
                 </div>
 
             </div>
         </section>
 
-        <!-- VENTAJAS -->
+        <!-- BENEFICIOS -->
         <section class="benefits">
             <div class="container">
 
                 <div class="section-heading">
-                    <span class="section-tag">PUNTO GAMER</span>
-                    <h2>¿Por qué elegirnos?</h2>
+
+                    <span class="section-tag">
+                        NUESTRA PROPUESTA
+                    </span>
+
+                    <h2>¿Por qué elegir Punto Gamer?</h2>
+
+                    <p>
+                        Una experiencia pensada para los amantes
+                        de los videojuegos.
+                    </p>
+
                 </div>
 
                 <div class="benefits-grid">
 
                     <article class="benefit-card">
-                        <span>🎮</span>
+
+                        <div class="benefit-icon">🎮</div>
+
                         <h3>Gran variedad</h3>
-                        <p>Encontrá diferentes géneros y títulos.</p>
+
+                        <p>
+                            Encontrá diferentes géneros
+                            y títulos en un solo lugar.
+                        </p>
+
                     </article>
 
                     <article class="benefit-card">
-                        <span>🔒</span>
+
+                        <div class="benefit-icon">🛒</div>
+
                         <h3>Compra sencilla</h3>
-                        <p>Organizá tus productos desde el carrito.</p>
+
+                        <p>
+                            Organizá tus videojuegos
+                            desde el carrito.
+                        </p>
+
                     </article>
 
                     <article class="benefit-card">
-                        <span>⭐</span>
+
+                        <div class="benefit-icon">⭐</div>
+
                         <h3>Tus favoritos</h3>
-                        <p>Guardá los juegos que más te gustan.</p>
+
+                        <p>
+                            Guardá los juegos que más
+                            te gustan y encontralos fácilmente.
+                        </p>
+
                     </article>
 
                 </div>
+
             </div>
         </section>
 
-        <!-- NEWSLETTER -->
+        <!-- LLAMADA A LA ACCIÓN -->
         <section class="newsletter">
             <div class="container">
-                <h2>Unite a la comunidad gamer</h2>
-                <p>Enterate de las novedades de Punto Gamer.</p>
 
-                <form class="newsletter-form">
-                    <input
-                        type="email"
-                        placeholder="Ingresá tu correo electrónico"
-                        aria-label="Correo electrónico"
-                        required
-                    >
+                <span class="section-tag">
+                    PUNTO GAMER
+                </span>
 
-                    <button type="submit" class="btn">
-                        Suscribirme
-                    </button>
-                </form>
+                <h2>¿Listo para jugar?</h2>
+
+                <p>
+                    Explorá nuestro catálogo y encontrá
+                    tu próxima aventura.
+                </p>
+
+                <a href="pages/catalogo.html" class="btn">
+                    Explorar videojuegos →
+                </a>
+
             </div>
         </section>
 
@@ -239,53 +341,75 @@
 
     <!-- PIE DE PÁGINA -->
     <footer class="footer">
+
         <div class="container footer-content">
 
             <div class="footer-brand">
+
                 <a href="index.html" class="logo">
                     PUNTO <span>GAMER</span>
                 </a>
 
-                <p>LEVEL UP YOUR GAME.</p>
-                <p>Tu próximo videojuego está acá.</p>
+                <p class="footer-slogan">
+                    LEVEL UP YOUR GAME.
+                </p>
+
+                <p>
+                    Tu próximo videojuego está acá.
+                </p>
+
             </div>
 
             <div class="footer-links">
+
                 <h3>Navegación</h3>
+
                 <a href="index.html">Inicio</a>
                 <a href="pages/catalogo.html">Catálogo</a>
                 <a href="pages/contacto.html">Contacto</a>
+
             </div>
 
             <div class="footer-links">
+
                 <h3>Mi cuenta</h3>
+
                 <a href="pages/login.html">Iniciar sesión</a>
                 <a href="pages/favoritos.html">Favoritos</a>
                 <a href="pages/carrito.html">Carrito</a>
+
             </div>
 
             <div class="footer-links">
+
                 <h3>Contacto</h3>
-                <p>Consultas y atención al cliente</p>
-                <a href="pages/contacto.html">Escribinos</a>
+
+                <p>Consultas y atención al cliente.</p>
+
+                <a href="pages/contacto.html">
+                    Escribinos →
+                </a>
+
             </div>
 
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Punto Gamer. Todos los derechos reservados.</p>
+            <p>
+                &copy; 2026 Punto Gamer.
+                Todos los derechos reservados.
+            </p>
         </div>
+
     </footer>
 
-
-<!-- JAVASCRIPT -->
-
-<script src="js/storage.js"></script>
-<script src="js/productos.js"></script>
-<script src="js/main.js"></script>
-<script src="js/carrito.js"></script>
-<script src="js/favoritos.js"></script>
-<script src="js/catalogo.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="js/storage.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/favoritos.js"></script>
+    <script src="js/catalogo.js"></script>
 
 </body>
 </html>
